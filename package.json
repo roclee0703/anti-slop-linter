@@ -1,0 +1,37 @@
+{
+  "name": "anti-slop-linter",
+  "version": "0.1.0",
+  "description": "Static analysis linter for AI-generated frontend code (Tailwind, React, HTML) to prevent common LLM visual defects and design slop.",
+  "main": "src/index.mjs",
+  "type": "module",
+  "bin": {
+    "anti-slop": "./bin/anti-slop.mjs"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.mjs",
+    "lint": "node bin/anti-slop.mjs scan tests/fixtures"
+  },
+  "keywords": [
+    "linter",
+    "ai-code",
+    "llm-evaluation",
+    "codex",
+    "tailwind",
+    "ui-quality",
+    "static-analysis",
+    "anti-slop"
+  ],
+  "author": "roclee0703 <roclee0703@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roclee0703/anti-slop-linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roclee0703/anti-slop-linter/issues"
+  },
+  "homepage": "https://github.com/roclee0703/anti-slop-linter#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
