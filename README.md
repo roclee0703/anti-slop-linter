@@ -2,6 +2,7 @@
 
 > Static analysis linter designed for AI coding agents (OpenAI Codex, Claude, Cursor) and CI/CD pipelines to catch LLM frontend visual defects, cliché styles, and uncalibrated template leaks.
 
+[![CI](https://github.com/roclee0703/anti-slop-linter/actions/workflows/ci.yml/badge.svg)](https://github.com/roclee0703/anti-slop-linter/actions/workflows/ci.yml)
 [![Node.js CI](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green.svg)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![AI Code QA](https://img.shields.io/badge/Codex-Anti--Slop-orange.svg)](https://openai.com)
