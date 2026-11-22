@@ -25,4 +25,10 @@ describe('Anti-Slop Frontend Linter', () => {
     assert.strictEqual(report.clean, true);
     assert.strictEqual(report.totalIssues, 0);
   });
+
+  it('detects images missing alt text', () => {
+    const snippet = '<img src="/banner.jpg" className="w-full" />';
+    const report = lintFrontendCode(snippet);
+    assert.ok(report.issues.some(i => i.rule === 'responsive-image'));
+  });
 });

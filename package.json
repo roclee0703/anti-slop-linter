@@ -1,6 +1,6 @@
 {
   "name": "anti-slop-linter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static analysis linter for AI-generated frontend code (Tailwind, React, HTML) to prevent common LLM visual defects and design slop.",
   "main": "src/index.mjs",
   "type": "module",

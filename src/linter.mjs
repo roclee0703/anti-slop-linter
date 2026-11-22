@@ -2,13 +2,15 @@ import { checkGradientAbuse } from './rules/gradient-abuse.mjs';
 import { checkPlaceholderLeak } from './rules/placeholder-leak.mjs';
 import { checkCardNesting } from './rules/card-nesting.mjs';
 import { checkContrast } from './rules/contrast-check.mjs';
+import { checkResponsiveImage } from './rules/responsive-image.mjs';
 
 export function lintFrontendCode(sourceCode, options = {}) {
   const allIssues = [
     ...checkGradientAbuse(sourceCode),
     ...checkPlaceholderLeak(sourceCode),
     ...checkCardNesting(sourceCode),
-    ...checkContrast(sourceCode)
+    ...checkContrast(sourceCode),
+    ...checkResponsiveImage(sourceCode)
   ];
 
   return {

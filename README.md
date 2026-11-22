@@ -45,6 +45,7 @@ node bin/anti-slop.mjs scan ./src
 | `placeholder-leak` | Error | Residual `lorem ipsum`, mock URLs, or prompt brackets |
 | `card-nesting` | Warning | Deeply stacked cards/borders causing visual clutter |
 | `contrast-check` | Error | Faint text pairings failing WCAG AA contrast |
+| `responsive-image` | Warning | Image markup missing descriptive alt attributes |
 
 ---
 
